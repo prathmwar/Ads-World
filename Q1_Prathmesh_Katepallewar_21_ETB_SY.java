@@ -11,7 +11,6 @@ public class Q1_Prathmesh_Katepallewar_21_ETB_SY
         if(n>=0 && n<=40)
         {
             int Time=40-num;
-
             System.out.println("remaining time for complete cooking of Sabji is : "+Time);
         }
     }
