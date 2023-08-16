@@ -1,0 +1,36 @@
+<class name="TrainTracker">
+    <field name="stations" type="java.util.List<Station>"/>
+    <field name="trains" type="java.util.List<Train>"/>
+    <constructor>
+        <parameter name="stations" type="java.util.List<Station>"/>
+        <parameter name="trains" type="java.util.List<Train>"/>
+    </constructor>
+    <method name="addStation">
+        <parameter name="station" type="Station"/>
+        <body>
+            this.stations.add(station);
+        </body>
+    </method>
+    <method name="addTrain">
+        <parameter name="train" type="Train"/>
+        <body>
+            this.trains.add(train);
+        </body>
+    </method>
+    <method name="getStations">
+        <body>
+            return this.stations;
+        </body>
+    </method>
+    <method name="getTrains">
+        <body>
+            return this.trains;
+        </body>
+    </method>
+    <method name="trackTrain">
+        <parameter name="train" type="Train"/>
+        <body>
+            System.out.println("Train " + train.getName() + " is now at station " + train.getCurrentStation().getName());
+        </body>
+    </method>
+</class>
